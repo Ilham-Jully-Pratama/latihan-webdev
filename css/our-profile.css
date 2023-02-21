@@ -1,0 +1,15 @@
+#banner-profile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.container p{
+    margin-bottom: 30px;
+}
+.label{
+    background-color: #2986cc;
+    color: white;
+}
+#label-profile{
+    padding: 20px 0px;
+}

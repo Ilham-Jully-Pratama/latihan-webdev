@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="bg-loader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div id="icon">
+                <img src="/aset/Revou-alasan.original.png" alt="ini foto revou" width="65" height="60">
+            </div>
+            <h1><a href="index.html">Quality Assurance Laboratory</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/our-profile.html">Our Profile</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Massage Us</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <h2> HI <span id="nama"></span> WELCOME MY WEBSITE </h2>
+
+        <!-- <script>
+            var nama= prompt('masukan nama kamu ');
+           document.getElementById("nama").innerText= nama;
+        </script> -->
+
+    </section>
+    <!-- about -->
+    <section class="about"> 
+        <div class="container">
+            <h3> About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, odit assumenda ab soluta, aut eius fugit sit optio impedit culpa error nesciunt similique incidunt eos corrupti recusandae necessitatibus qui rerum!
+            </p>
+        </div>
+    </section>
+    <!-- our service  -->
+    <section >
+        <div class="container" >
+            <div class="our-service">
+                <h3>Our service</h3>
+            </div>
+            <div id="service"> 
+                <div>
+                    <img src="/aset/sytem certification.jpg" alt="ini foto revou" width="200" height="200">
+                    <p>System Certification <br> Services</p>
+                </div>
+                <div>
+                    <img src="/aset/costumer servuce.jpg" alt="ini foto revou" width="200" height="200">
+                    <p>Consumer Certificatin <br> Services</p>
+                </div>
+                <div>
+                    <img src="/aset/r&d.jpg" alt="ini foto revou" width="200" height="200">
+                    <p> R&d Services</p>
+                </div>
+                <div>
+                    <img src="/aset/traiing.jpg" alt="ini foto revou" width="200" height="200">
+                    <p>Training Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mesage us -->
+    <section>
+        <div class="container">
+            <div>
+                <h3>Massage Us</h3>
+            </div>
+            <div id="massage">
+                <div>
+                    <form name="pesan-form"
+                     onsubmit="return validateform()">
+                        <table id="table">
+                            <tr>
+                                <td><label for="">Nama</label></td>
+                                <td>:</td>
+                                <td><input type="text" placeholder="masukan nama" style="width: 6cm;" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Tanggal Lahir</label></td>
+                                <td>:</td>
+                                <td><input type="date" placeholder="Tanggal Lahir" style="width: 6cm;" name="tanggal-lahir"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Jenis Kelamin</label></td>
+                                <td>:</td>
+                                <td><input type="radio" name="jeniskelamin" value="laki-laki">laki-laki
+                                    <input type="radio" name="jeniskelamin" value="perempuan">perempuan
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Pesan</label></td>
+                                <td>:</td>
+                                <td><textarea name="textarea" id="" cols="26" rows="3" placeholder="pesan"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button type="submit" style="width: 9.7cm;">Submit</button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </form>
+                    <script>
+                        function validateform(){
+                            var nama= document.forms['pesan-form']["name"].value;
+                            var tanggal= document.forms["pesan-form"]["tanggal-lahir"].value;
+                            var jk= document.forms["pesan-form"]["jeniskelamin"].value;
+                            var pesan= document.forms["pesan-form"]["textarea"].value;
+                            // console.log(nama, tanggal, jk, pesan );
+                            if (nama =="" || tanggal=="" || jk==""|| pesan==""){
+                                alert("Tidak boleh kosong ")
+                            }
+                            document.getElementById("hasil-nama").innerText= nama;
+                            document.getElementById("hasil-tgl").innerText= tanggal;
+                            document.getElementById("hasil-jk").innerText= jk;
+                            document.getElementById("hasil-text").innerText= pesan;
+                            return false;
+
+                        }
+
+                    </script>
+
+                </div>
+                <div id="hasil">
+                    <table id="tabel-hasil">
+                        <tr>
+                            <td><label for="">Nama</label></td>
+                            <td>:</td>
+                            <td id="hasil-nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td id="hasil-tgl"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Jenis Kelamin</label></td>
+                            <td>:</td>
+                            <td id="hasil-jk"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Pesan</label></td>
+                            <td>:</td>
+                            <td id="hasil-text"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h4>
+                Cover By Revou
+            </h4>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+</body>
+</html>

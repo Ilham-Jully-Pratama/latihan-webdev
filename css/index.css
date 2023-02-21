@@ -1,0 +1,178 @@
+
+
+/* index html */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+a{
+    text-decoration: none;
+}
+.medsos{
+    padding: 5px 0;
+    background-color:#2986cc;
+}
+.medsos ul li{
+    display: inline-block;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+
+}
+.container ul li a{
+    color: black;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* header{
+    border: 1px solid;
+} */
+#icon{
+    float: left;
+    margin: 5px 20px 0px 0px;
+}
+header ul{
+    /* border: 1px solid; */
+    float: right;
+}
+header h1{
+    /* border:1px solid; */
+    float: left;
+    padding: 10px 0px;
+}
+header h1 a{
+    color: #2986cc;
+    font-size: 20px;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a{
+    padding: 20px 10px;
+    display: inline-block;
+}
+header ul li a:hover{
+    background-color: #2986cc;
+    color: white;
+}
+.banner{
+    /* border: 1px solid; */
+    height: 60vh;
+    background-image: url(../aset/costumer\ servuce.jpg);
+    background-size:60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(	41, 134, 204, .6);
+}
+.banner h2{
+    color: white;
+    z-index: 1;
+    border: 1px white solid;
+    padding: 20px 20px;
+}
+section{
+    /* border: 1px solid; */
+    padding: 50px 0px;
+}
+section h3{
+    text-align: center;
+    /* border: 1px solid; */
+    color:#2986cc;
+    /* background-color: #2986cc; */
+    margin-bottom: 20px;
+}
+.about p{
+    text-align: justify;
+}
+#service{
+    display: flex;
+    justify-content: space-between;
+}
+#service img{
+    border-radius: 100%;
+}
+.our-service h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#service p{
+    text-align: center;
+    margin-top: 10px;
+}
+#massage{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: space-between;
+
+}
+footer{
+    margin-top: 20px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: right;
+    /* border: 1px solid; */
+    background-color: #2986cc;
+}
+footer div{
+    margin-right: 20px;
+}
+footer h4{
+    color: white;
+}
+#hasil{
+    margin-right: 30px;
+    border: 1px solid;
+    width: 50%;
+    
+}
+.bg-loader{
+    background-color: #eee;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top-color: #2986cc;
+    border-bottom-color: #2986cc;
+    border-right-color: #2986cc;
+    animation: puterin .5s linear infinite;
+}
+#table{
+    border: 1px solid;
+    padding: 20px 25px;
+}
+#tabel-hasil{
+    padding: 20px 25px;
+}
+
+@keyframes puterin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
