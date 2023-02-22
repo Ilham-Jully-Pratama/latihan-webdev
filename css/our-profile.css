@@ -5,6 +5,7 @@
 }
 .container p{
     margin-bottom: 30px;
+    text-align: justify;
 }
 .label{
     background-color: #2986cc;
