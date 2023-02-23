@@ -14,7 +14,7 @@ ini merupakan mini coding saya dari Revou Fundamental Course (Software Engineer)
 
 ## Screenshots
 
-![App Screenshot](/ss/massage.png)
+![App Screenshot](/ss/massage-.png)
 
 ## Screenshots
 
