@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home </title>
+    <title>Massage Use</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/our-profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +15,6 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- loader -->
-    <div class="bg-loader">
-        <div class="loader">
-
-        </div>
-    </div>
-    <!-- header -->
     <div class="medsos">
         <div class="container">
             <ul>
@@ -43,51 +37,12 @@
             </ul>
         </div>
     </header>
-    
-    <section class="banner">
-        <h2> HI <span id="nama"></span> WELCOME MY WEBSITE </h2>
-
-        <script>
-            var nama= prompt('masukan nama kamu ');
-           document.getElementById("nama").innerText= nama;
-        </script>
-
-    </section>
-    <!-- about -->
-    <section class="about"> 
+    <section class="label" id="label-profile">
         <div class="container">
-            <h3> About</h3>
-            <p> Merupakan Perusahaan yang bergerak dalam bidang analisa baik pangan maupun non-pangan untuk memberikan jaminan kualitas terhadap suatu produk 
-            </p>
+            <p>Home/Massage Use</p>
         </div>
     </section>
-    <!-- our service  -->
-    <section >
-        <div class="container" >
-            <div class="our-service">
-                <h3>Our service</h3>
-            </div>
-            <div id="service"> 
-                <div>
-                    <img src="/aset/sytem certification.jpg" alt="ini foto revou" width="200" height="200">
-                    <p>System Certification <br> Services</p>
-                </div>
-                <div>
-                    <img src="/aset/costumer servuce.jpg" alt="ini foto revou" width="200" height="200">
-                    <p>Consumer Certificatin <br> Services</p>
-                </div>
-                <div>
-                    <img src="/aset/r&d.jpg" alt="ini foto revou" width="200" height="200">
-                    <p> R&d Services</p>
-                </div>
-                <div>
-                    <img src="/aset/traiing.jpg" alt="ini foto revou" width="200" height="200">
-                    <p>Training Services</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- mesage us -->
+
     <section id="massage-use">
         <div class="container">
             <div>
@@ -178,6 +133,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div>
             <h4>
@@ -185,10 +141,5 @@
             </h4>
         </div>
     </footer>
-    <script>
-        $(document).ready(function(){
-            $(".bg-loader").hide();
-        })
-    </script>
 </body>
 </html>
